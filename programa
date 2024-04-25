@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Aleatória</title>
+</head>
+<body>
+    <h1>Imagem Aleatória</h1>
+    <img id="randomImage" src="" alt="Imagem Aleatória">
+    
+    <script>
+        var images = [
+            'https://i.pinimg.com/564x/15/42/e3/1542e31335f81086a0ab6c5d32cbcc1c.jpg',
+            'https://i.pinimg.com/564x/56/86/10/56861034f770a26cb40021da9f905153.jpg',
+            'https://i.pinimg.com/564x/91/08/f6/9108f648942186092e6397b5902a05c5.jpg',
+            'https://i.pinimg.com/564x/67/21/b0/6721b00ec33795d4f88197b7662d3223.jpg',
+            'https://i.pinimg.com/564x/54/71/9a/54719a92f0df7991d4bb2f393940db65.jpg',
+            'https://i.pinimg.com/564x/b4/1e/ca/b41eca44d12461cc5e02f2b594c9fdf2.jpg',
+            'https://i.pinimg.com/150x150/95/c9/7e/95c97e5fa37a70e3ea725b30be24f7c2.jpg',
+            'https://i.pinimg.com/564x/5f/dc/36/5fdc3654cd048a60ba812e1fd5139847.jpg',
+            'https://i.pinimg.com/564x/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg',
+            // Adicione mais links para suas imagens aqui
+        ];
+
+        var randomIndex = Math.floor(Math.random() * images.length);
+        var randomImage = document.getElementById('randomImage');
+        randomImage.src = images[randomIndex];
+    </script>
+</body>
+</html>
